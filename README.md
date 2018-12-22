@@ -11,7 +11,7 @@ For more insights head over to the discussion at
 
 ## How to use
 
-1. Download the latest release from GitHub
+1. [Download](https://github.com/LukWebsForge/SourceLogger/releases/download/v1.0/source_logger) the latest release from GitHub
 2. Put the file `source_logger` into the same directory as `srcds_linux`
 2. Replace in your start script the call of `srcds_linux` or `srcds_run` with `source_logger`.
 
