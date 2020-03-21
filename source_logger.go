@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/kr/pty"
+	"github.com/creack/pty"
 	"io"
 	"os"
 	"os/exec"
@@ -39,11 +39,7 @@ func main() {
 	}
 
 	// Redirecting the output of gmod to the stdout
-	_, err = io.Copy(os.Stdout, file)
-	if err != nil {
-		fmt.Println("[sourcelogger] finished with copy error (nothing to worry about)")
-	} else {
-		fmt.Println("[sourcelogger] finished")
-	}
-
+	go func() {_, _ = io.Copy(file, os.Stdin)}()
+	// Redirecting the stdin to input of gmod
+	_,_ = io.Copy(os.Stdout, file)
 }
