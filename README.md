@@ -36,4 +36,4 @@ You can't use the _auto update_ feature of the `srcds_run` script,
 because the `srcds_linux` executable is called directly from the SourceLogger.
 
 ## How does it work?
-This program uses [kr/pty](https://github.com/kr/pty) to create a pseudo console and capture its output.
+This program uses [creack/pty](https://github.com/creack/pty) to create a pseudo console and capture its output.

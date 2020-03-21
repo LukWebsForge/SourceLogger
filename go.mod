@@ -1,3 +1,8 @@
 module source-logger
 
-require github.com/kr/pty v1.1.3
+go 1.14
+
+require (
+	github.com/creack/pty v1.1.9
+	golang.org/x/sys v0.0.0-20200321134203-328b4cd54aae // indirect
+)

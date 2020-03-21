@@ -39,7 +39,7 @@ func main() {
 	}
 
 	// Redirecting the output of gmod to the stdout
-	go func() {_, _ = io.Copy(file, os.Stdin)}()
+	go func() { _, _ = io.Copy(file, os.Stdin) }()
 	// Redirecting the stdin to input of gmod
-	_,_ = io.Copy(os.Stdout, file)
+	_, _ = io.Copy(os.Stdout, file)
 }
