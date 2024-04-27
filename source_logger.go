@@ -34,7 +34,7 @@ func main() {
 	// Starting the pseudo terminal for catching the stdout of gmod
 	file, err := pty.Start(cmd)
 	if err != nil {
-		fmt.Println("[sourcelogger] could't start the srcds_linux executable")
+		fmt.Println("[sourcelogger] couldn't start the srcds_linux executable")
 		panic(err)
 	}
 
